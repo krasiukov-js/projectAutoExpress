@@ -1,7 +1,28 @@
-*
-    font-family: 'Roboto', sans-serif
-
+@import 'variables'
 @import 'header'
-@import ''
-@import ''
-@import ''
+
+*
+    box-sizing: border-box
+*::before
+    box-sizing: border-box
+*::after
+    box-sizing: border-box
+
+body
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    color: $firm-color
+
+a
+    text-decoration: none
+    color: inherit
+    display: inline-block
+
+.container
+    max-width: 1220px
+    margin: 0 auto
+    padding: 0 10px
+
+
