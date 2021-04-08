@@ -1,0 +1,65 @@
+.services
+    padding-top: 310px
+    &__inner
+        display: flex
+        margin-bottom: 100px
+    &__content
+    &__content-box
+        max-width: 504px
+        margin-right: 96px
+    &__content-title
+        font-size: 18px
+        font-weight: 300
+        line-height: 27px
+        text-align: left
+        color: $akcent-color
+        margin-bottom: 12px
+    &__content-textbox
+        margin-bottom: 57px
+    &__content-text
+        font-size: 18px
+        font-weight: 300
+        line-height: 27px
+        text-align: left
+        color: $black-color
+        margin-bottom: 12px
+    &__list
+        list-style: none
+        counter-reset: my-counter
+    &__item
+        counter-increment: my-counter
+        border: 2px solid $grey-color
+        margin-bottom: 12px
+        width: 450px
+        padding: 10px 10px 9px 113px
+        position: relative
+        transition: all .5s
+    &__item::before
+        content: '0' counter(my-counter)
+        position: absolute
+        font-size: 36px
+        font-weight: 400
+        line-height: 53px
+        color: $grey-color
+        left: 20px
+        transform: rotate(-90deg)
+        transition: all .5s
+    &__item:hover
+        border: 2px solid $akcent-color
+        width: 500px
+    &__item:hover::before
+        color: $black-color
+    &__item-title:hover
+        color: $akcent-color
+    &__item-title
+        font-size: 24px
+        font-weight: 300
+        line-height: 36px
+        text-align: left;
+        color: $black-color
+    &__item-text
+        font-size: 18px
+        font-weight: 300
+        line-height: 27px
+        text-align: left
+        color: $black-color
