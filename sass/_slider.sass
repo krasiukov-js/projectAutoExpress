@@ -1,0 +1,38 @@
+.slider
+    margin-bottom: 100px
+    &__inner
+        margin: 0 -7px
+    &__item-img
+        max-width: 100%
+        margin-bottom: 23px
+    &__item-box
+        border: 1px solid $grey-color
+        padding: 6px 6px 16px 6px
+        margin: 0 7px
+        text-align: center
+        transition: all .5s
+    &__item-box:hover
+        background: $akcent-color
+        border-color: $akcent-color
+        color: $white-color
+    &__item-title
+        font-weight: 300
+        margin-top: 5px
+    .slick-dots
+        display: flex
+        justify-content: center
+        margin-top: 50px
+        list-style: none
+        button
+            font-size: 0
+            bottom: none
+            padding: none
+            border: none
+            margin: 0 10px
+            background-color: $grey-color
+            width: 50px
+            height: 1px
+        .slick-active
+            button
+                background-color: $akcent-color
+                height: 3px
