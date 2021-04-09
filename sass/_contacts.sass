@@ -2,7 +2,6 @@
     &__inner
         display: flex
         justify-content: space-between
-    &__info
     &__list
         padding-bottom: 57px
         list-style: none
@@ -16,12 +15,6 @@
         width: 600px;
         background-color: $firm-color
         padding: 50px 75px 57px
-    &__title
-        color: $white-color
-        margin-bottom: 16px
-        border-left: 53px
-    &__title::after
-        background-color: $white-color
     &__input
         display: block
         margin: 0 auto
@@ -46,4 +39,11 @@
         margin: 0 auto
         margin-top: 78px
         color: $white-color
-        cursor: pointer    
+        cursor: pointer
+
+.title.contacts__title
+    color: $white-color
+    margin-bottom: 16px
+    margin-left: 53px
+.title.contacts__title::after
+    background-color: $white-color
