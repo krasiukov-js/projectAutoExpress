@@ -87,3 +87,127 @@ a
     align-items: center
     &__link
         margin: 0 5px
+
+@media (max-width: 1200px)
+    .header
+        &__img
+            width: 65%
+    .services
+        padding-top: 100px
+        &__item:hover
+            width: 100%
+    .advantages
+        &__content-box
+            width: 100%
+
+@media (max-width: 992px)
+    .header
+        &__img
+            width: 60%
+        &__title
+            font-size: 70px
+        &__subtitle
+            font-size: 32px
+        &__content
+            padding-top: 30px
+    .services
+        &__content-box
+            max-width: 100%
+            margin-right: 0
+        &__list
+            display: none
+        .button
+            margin-left: 30%
+    .advantages
+        &__inner
+            display: block
+        &__img
+            display: none
+        &__content
+            margin-left: 0
+    .contacts
+        &__inner
+            flex-direction: column
+        &__form
+            width: 100%
+        &__info
+            font-size: 30px
+            line-height: 42px
+
+@media (max-width: 768px)
+    .header
+        &__title
+            font-size: 52px
+        &__subtitle
+            font-size: 29px
+    .advantages
+        &__content-box
+            padding-left: 135px
+    .footer
+        &__inner
+            flex-direction: column
+
+@media (max-width: 576px)
+    .header
+        &__top
+            flex-direction: column
+        &__title
+            font-size: 57px
+            text-align: center
+        &__subtitle
+            text-align: center
+        &__descr
+            font-style: 21px
+            text-align: center
+        &__img
+            display: none
+        &__content
+            padding-top: 0
+        .button
+            display: block
+            margin: 0 auto
+            text-align: center
+    .services
+        &__inner
+            margin-bottom: 50px
+        .button
+            display: block
+            margin: 0 auto
+            text-align: center
+        .button--decor::after
+            display: none
+        .button--decor::before
+            display: none
+    .advantages
+        &__title
+            margin-left: 0
+        &__text
+            width: 100%
+        &__content
+            margin-left: 0
+        &__content-box
+            padding: 23px 20px 25px 10px
+        &__inner
+            padding-bottom: 50px
+    .slider
+        &__item-img
+            width: 100%
+    .slider .slick-dots button
+        width: 10px
+    .slider .title
+        font-size: 30px
+    .slider .title::after
+        display: none
+    .title.contacts__title
+        margin-left: 0
+        text-align: center
+    .title.contacts__title::after
+        display: none
+    .contacts
+        &__form
+            padding-right: 0
+            padding-left: 0
+        &__input
+            width: 90%
+    
+            
